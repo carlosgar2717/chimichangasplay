@@ -1,0 +1,95 @@
+video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: fixed;
+}
+.capa{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.3;
+	position: fixed;
+}
+
+h1{
+	position: relative;
+	text-shadow: 0 5px 20px blue;
+	font-family: Arial;
+}
+
+.trailers{
+ position: relative;
+ width: 100%;
+ border: solid 3px greenyellow;
+ border-radius: 20px;
+}
+
+.you{
+	border-radius: 20px;
+}
+
+
+.todo{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,
+		                            minmax(min(11.25rem,100%) , 1fr));
+	grid-gap: 1rem;
+}
+ 
+
+.cartas{
+	position: relative;
+	display: flex;
+	width: 150px;
+	height: 200px;
+	margin: 30px 20px 20px 30px ;
+	border-radius: 20px;
+	box-shadow: 0 5px 20px violet;
+	overflow: hidden;
+}
+
+.contenido{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: -100%;
+	position: absolute;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+	transition: 0.8s;
+}
+
+.imagen{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+
+	
+}
+
+.titulo{
+	font-size: 17px;
+ color: white;
+ padding: 8px;
+}
+
+.conten{
+	color: white;
+	font-size: 10px;
+	align-content: center;
+	margin: 6px;
+	font-family: arial;
+}
+
+
+.cartas:hover .contenido{
+	right: 0;
+}
+
